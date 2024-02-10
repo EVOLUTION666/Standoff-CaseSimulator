@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController {
 // MARK: - Private functions
 private extension ProfileViewController {
     func initialize() {
+        view.backgroundColor = .red
     }
 }
 

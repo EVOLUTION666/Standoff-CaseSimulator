@@ -24,6 +24,7 @@ class GameViewController: UIViewController {
 // MARK: - Private functions
 private extension GameViewController {
     func initialize() {
+        view.backgroundColor = .blue
     }
 }
 

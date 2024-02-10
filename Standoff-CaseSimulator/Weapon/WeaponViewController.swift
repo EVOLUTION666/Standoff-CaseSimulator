@@ -24,6 +24,7 @@ class WeaponViewController: UIViewController {
 // MARK: - Private functions
 private extension WeaponViewController {
     func initialize() {
+        view.backgroundColor = .green
     }
 }
 

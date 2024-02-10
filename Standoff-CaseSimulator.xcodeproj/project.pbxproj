@@ -9,21 +9,57 @@
 /* Begin PBXBuildFile section */
 		55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A72B77C8A5002B9842 /* AppDelegate.swift */; };
 		55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */; };
-		55DD64AC2B77C8A5002B9842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64AB2B77C8A5002B9842 /* ViewController.swift */; };
-		55DD64AF2B77C8A5002B9842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64AD2B77C8A5002B9842 /* Main.storyboard */; };
 		55DD64B12B77C8A8002B9842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64B02B77C8A8002B9842 /* Assets.xcassets */; };
 		55DD64B42B77C8A8002B9842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64B22B77C8A8002B9842 /* LaunchScreen.storyboard */; };
+		55DD64C02B77C8B8002B9842 /* ProfileModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64BB2B77C8B8002B9842 /* ProfileModuleBuilder.swift */; };
+		55DD64C12B77C8B8002B9842 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64BC2B77C8B8002B9842 /* ProfilePresenter.swift */; };
+		55DD64C22B77C8B8002B9842 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64BD2B77C8B8002B9842 /* ProfileRouter.swift */; };
+		55DD64C32B77C8B8002B9842 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64BE2B77C8B8002B9842 /* ProfileViewController.swift */; };
+		55DD64C42B77C8B8002B9842 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64BF2B77C8B8002B9842 /* ProfileInteractor.swift */; };
+		55DD64CB2B77C8CD002B9842 /* WeaponModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64C62B77C8CD002B9842 /* WeaponModuleBuilder.swift */; };
+		55DD64CC2B77C8CD002B9842 /* WeaponPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64C72B77C8CD002B9842 /* WeaponPresenter.swift */; };
+		55DD64CD2B77C8CD002B9842 /* WeaponRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64C82B77C8CD002B9842 /* WeaponRouter.swift */; };
+		55DD64CE2B77C8CD002B9842 /* WeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64C92B77C8CD002B9842 /* WeaponViewController.swift */; };
+		55DD64CF2B77C8CD002B9842 /* WeaponInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64CA2B77C8CD002B9842 /* WeaponInteractor.swift */; };
+		55DD64D62B77C8E9002B9842 /* GameModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D12B77C8E9002B9842 /* GameModuleBuilder.swift */; };
+		55DD64D72B77C8E9002B9842 /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D22B77C8E9002B9842 /* GamePresenter.swift */; };
+		55DD64D82B77C8E9002B9842 /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D32B77C8E9002B9842 /* GameRouter.swift */; };
+		55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D42B77C8E9002B9842 /* GameViewController.swift */; };
+		55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D52B77C8E9002B9842 /* GameInteractor.swift */; };
+		55DD64F52B77CA90002B9842 /* SideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F22B77CA90002B9842 /* SideTabBarController.swift */; };
+		55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F12B77CA90002B9842 /* ContainerViewController.swift */; };
+		55DD64F72B77CA90002B9842 /* SideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F42B77CA90002B9842 /* SideTabBar.swift */; };
+		55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */; };
+		55DD64FA2B77CAAD002B9842 /* CALayer + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55DD64A42B77C8A5002B9842 /* Standoff-CaseSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-CaseSimulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD64A72B77C8A5002B9842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55DD64AB2B77C8A5002B9842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55DD64AE2B77C8A5002B9842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55DD64B02B77C8A8002B9842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55DD64B32B77C8A8002B9842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55DD64B52B77C8A8002B9842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55DD64BB2B77C8B8002B9842 /* ProfileModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleBuilder.swift; sourceTree = "<group>"; };
+		55DD64BC2B77C8B8002B9842 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		55DD64BD2B77C8B8002B9842 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		55DD64BE2B77C8B8002B9842 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		55DD64BF2B77C8B8002B9842 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		55DD64C62B77C8CD002B9842 /* WeaponModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModuleBuilder.swift; sourceTree = "<group>"; };
+		55DD64C72B77C8CD002B9842 /* WeaponPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPresenter.swift; sourceTree = "<group>"; };
+		55DD64C82B77C8CD002B9842 /* WeaponRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponRouter.swift; sourceTree = "<group>"; };
+		55DD64C92B77C8CD002B9842 /* WeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponViewController.swift; sourceTree = "<group>"; };
+		55DD64CA2B77C8CD002B9842 /* WeaponInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponInteractor.swift; sourceTree = "<group>"; };
+		55DD64D12B77C8E9002B9842 /* GameModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleBuilder.swift; sourceTree = "<group>"; };
+		55DD64D22B77C8E9002B9842 /* GamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
+		55DD64D32B77C8E9002B9842 /* GameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRouter.swift; sourceTree = "<group>"; };
+		55DD64D42B77C8E9002B9842 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		55DD64D52B77C8E9002B9842 /* GameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInteractor.swift; sourceTree = "<group>"; };
+		55DD64F12B77CA90002B9842 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		55DD64F22B77CA90002B9842 /* SideTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarController.swift; sourceTree = "<group>"; };
+		55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarItem.swift; sourceTree = "<group>"; };
+		55DD64F42B77CA90002B9842 /* SideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBar.swift; sourceTree = "<group>"; };
+		55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +92,97 @@
 		55DD64A62B77C8A5002B9842 /* Standoff-CaseSimulator */ = {
 			isa = PBXGroup;
 			children = (
-				55DD64A72B77C8A5002B9842 /* AppDelegate.swift */,
-				55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */,
-				55DD64AB2B77C8A5002B9842 /* ViewController.swift */,
-				55DD64AD2B77C8A5002B9842 /* Main.storyboard */,
-				55DD64B02B77C8A8002B9842 /* Assets.xcassets */,
-				55DD64B22B77C8A8002B9842 /* LaunchScreen.storyboard */,
-				55DD64B52B77C8A8002B9842 /* Info.plist */,
+				55DD64DE2B77C9E2002B9842 /* SideBar */,
+				55DD64C52B77C8BD002B9842 /* Profile */,
+				55DD64D02B77C8D2002B9842 /* Weapon */,
+				55DD64DB2B77C8EE002B9842 /* Game */,
+				55DD64DC2B77C902002B9842 /* Application */,
+				55DD64DD2B77C918002B9842 /* Resources */,
+				55DD64E72B77CA3E002B9842 /* Core */,
 			);
 			path = "Standoff-CaseSimulator";
+			sourceTree = "<group>";
+		};
+		55DD64C52B77C8BD002B9842 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64BB2B77C8B8002B9842 /* ProfileModuleBuilder.swift */,
+				55DD64BC2B77C8B8002B9842 /* ProfilePresenter.swift */,
+				55DD64BD2B77C8B8002B9842 /* ProfileRouter.swift */,
+				55DD64BE2B77C8B8002B9842 /* ProfileViewController.swift */,
+				55DD64BF2B77C8B8002B9842 /* ProfileInteractor.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		55DD64D02B77C8D2002B9842 /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64C62B77C8CD002B9842 /* WeaponModuleBuilder.swift */,
+				55DD64C72B77C8CD002B9842 /* WeaponPresenter.swift */,
+				55DD64C82B77C8CD002B9842 /* WeaponRouter.swift */,
+				55DD64C92B77C8CD002B9842 /* WeaponViewController.swift */,
+				55DD64CA2B77C8CD002B9842 /* WeaponInteractor.swift */,
+			);
+			path = Weapon;
+			sourceTree = "<group>";
+		};
+		55DD64DB2B77C8EE002B9842 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64D12B77C8E9002B9842 /* GameModuleBuilder.swift */,
+				55DD64D22B77C8E9002B9842 /* GamePresenter.swift */,
+				55DD64D32B77C8E9002B9842 /* GameRouter.swift */,
+				55DD64D42B77C8E9002B9842 /* GameViewController.swift */,
+				55DD64D52B77C8E9002B9842 /* GameInteractor.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		55DD64DC2B77C902002B9842 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64A72B77C8A5002B9842 /* AppDelegate.swift */,
+				55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */,
+				55DD64B52B77C8A8002B9842 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		55DD64DD2B77C918002B9842 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64B02B77C8A8002B9842 /* Assets.xcassets */,
+				55DD64B22B77C8A8002B9842 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55DD64DE2B77C9E2002B9842 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64F12B77CA90002B9842 /* ContainerViewController.swift */,
+				55DD64F42B77CA90002B9842 /* SideTabBar.swift */,
+				55DD64F22B77CA90002B9842 /* SideTabBarController.swift */,
+				55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */,
+			);
+			path = SideBar;
+			sourceTree = "<group>";
+		};
+		55DD64E72B77CA3E002B9842 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64E82B77CA44002B9842 /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		55DD64E82B77CA44002B9842 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +245,6 @@
 			files = (
 				55DD64B42B77C8A8002B9842 /* LaunchScreen.storyboard in Resources */,
 				55DD64B12B77C8A8002B9842 /* Assets.xcassets in Resources */,
-				55DD64AF2B77C8A5002B9842 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +255,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DD64AC2B77C8A5002B9842 /* ViewController.swift in Sources */,
+				55DD64C22B77C8B8002B9842 /* ProfileRouter.swift in Sources */,
+				55DD64CE2B77C8CD002B9842 /* WeaponViewController.swift in Sources */,
+				55DD64F72B77CA90002B9842 /* SideTabBar.swift in Sources */,
+				55DD64F52B77CA90002B9842 /* SideTabBarController.swift in Sources */,
+				55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */,
+				55DD64CF2B77C8CD002B9842 /* WeaponInteractor.swift in Sources */,
+				55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */,
+				55DD64CD2B77C8CD002B9842 /* WeaponRouter.swift in Sources */,
 				55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */,
+				55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */,
+				55DD64D82B77C8E9002B9842 /* GameRouter.swift in Sources */,
 				55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */,
+				55DD64D62B77C8E9002B9842 /* GameModuleBuilder.swift in Sources */,
+				55DD64D72B77C8E9002B9842 /* GamePresenter.swift in Sources */,
+				55DD64CC2B77C8CD002B9842 /* WeaponPresenter.swift in Sources */,
+				55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */,
+				55DD64CB2B77C8CD002B9842 /* WeaponModuleBuilder.swift in Sources */,
+				55DD64C32B77C8B8002B9842 /* ProfileViewController.swift in Sources */,
+				55DD64C12B77C8B8002B9842 /* ProfilePresenter.swift in Sources */,
+				55DD64FA2B77CAAD002B9842 /* CALayer + Ext.swift in Sources */,
+				55DD64C42B77C8B8002B9842 /* ProfileInteractor.swift in Sources */,
+				55DD64C02B77C8B8002B9842 /* ProfileModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55DD64AD2B77C8A5002B9842 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55DD64AE2B77C8A5002B9842 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55DD64B22B77C8A8002B9842 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -294,12 +422,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7MQF3GGWS3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Standoff-CaseSimulator/Info.plist";
+				INFOPLIST_FILE = "Standoff-CaseSimulator/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,12 +449,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7MQF3GGWS3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Standoff-CaseSimulator/Info.plist";
+				INFOPLIST_FILE = "Standoff-CaseSimulator/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
