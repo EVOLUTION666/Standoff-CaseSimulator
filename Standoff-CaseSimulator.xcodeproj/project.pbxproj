@@ -26,11 +26,17 @@
 		55DD64D82B77C8E9002B9842 /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D32B77C8E9002B9842 /* GameRouter.swift */; };
 		55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D42B77C8E9002B9842 /* GameViewController.swift */; };
 		55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D52B77C8E9002B9842 /* GameInteractor.swift */; };
-		55DD64F52B77CA90002B9842 /* SideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F22B77CA90002B9842 /* SideTabBarController.swift */; };
 		55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F12B77CA90002B9842 /* ContainerViewController.swift */; };
 		55DD64F72B77CA90002B9842 /* SideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F42B77CA90002B9842 /* SideTabBar.swift */; };
 		55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */; };
 		55DD64FA2B77CAAD002B9842 /* CALayer + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */; };
+		55DD65002B78CC3F002B9842 /* SideBarModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64FB2B78CC3F002B9842 /* SideBarModuleBuilder.swift */; };
+		55DD65012B78CC3F002B9842 /* SideBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64FC2B78CC3F002B9842 /* SideBarPresenter.swift */; };
+		55DD65022B78CC3F002B9842 /* SideBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64FD2B78CC3F002B9842 /* SideBarRouter.swift */; };
+		55DD65032B78CC3F002B9842 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64FE2B78CC3F002B9842 /* SideBarViewController.swift */; };
+		55DD65042B78CC3F002B9842 /* SideBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64FF2B78CC3F002B9842 /* SideBarInteractor.swift */; };
+		55DD65062B78D39C002B9842 /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD65052B78D39C002B9842 /* UIView + Ext.swift */; };
+		55DD65082B78D406002B9842 /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD65072B78D406002B9842 /* UIViewController + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,10 +62,16 @@
 		55DD64D42B77C8E9002B9842 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		55DD64D52B77C8E9002B9842 /* GameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInteractor.swift; sourceTree = "<group>"; };
 		55DD64F12B77CA90002B9842 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		55DD64F22B77CA90002B9842 /* SideTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarController.swift; sourceTree = "<group>"; };
 		55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarItem.swift; sourceTree = "<group>"; };
 		55DD64F42B77CA90002B9842 /* SideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBar.swift; sourceTree = "<group>"; };
 		55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Ext.swift"; sourceTree = "<group>"; };
+		55DD64FB2B78CC3F002B9842 /* SideBarModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarModuleBuilder.swift; sourceTree = "<group>"; };
+		55DD64FC2B78CC3F002B9842 /* SideBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarPresenter.swift; sourceTree = "<group>"; };
+		55DD64FD2B78CC3F002B9842 /* SideBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarRouter.swift; sourceTree = "<group>"; };
+		55DD64FE2B78CC3F002B9842 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
+		55DD64FF2B78CC3F002B9842 /* SideBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarInteractor.swift; sourceTree = "<group>"; };
+		55DD65052B78D39C002B9842 /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
+		55DD65072B78D406002B9842 /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 		55DD64A62B77C8A5002B9842 /* Standoff-CaseSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				55DD64F12B77CA90002B9842 /* ContainerViewController.swift */,
 				55DD64DE2B77C9E2002B9842 /* SideBar */,
 				55DD64C52B77C8BD002B9842 /* Profile */,
 				55DD64D02B77C8D2002B9842 /* Weapon */,
@@ -161,10 +174,12 @@
 		55DD64DE2B77C9E2002B9842 /* SideBar */ = {
 			isa = PBXGroup;
 			children = (
-				55DD64F12B77CA90002B9842 /* ContainerViewController.swift */,
-				55DD64F42B77CA90002B9842 /* SideTabBar.swift */,
-				55DD64F22B77CA90002B9842 /* SideTabBarController.swift */,
-				55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */,
+				55DD64FB2B78CC3F002B9842 /* SideBarModuleBuilder.swift */,
+				55DD64FC2B78CC3F002B9842 /* SideBarPresenter.swift */,
+				55DD64FD2B78CC3F002B9842 /* SideBarRouter.swift */,
+				55DD64FE2B78CC3F002B9842 /* SideBarViewController.swift */,
+				55DD64FF2B78CC3F002B9842 /* SideBarInteractor.swift */,
+				55DD650A2B7A3413002B9842 /* Views */,
 			);
 			path = SideBar;
 			sourceTree = "<group>";
@@ -181,8 +196,19 @@
 			isa = PBXGroup;
 			children = (
 				55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */,
+				55DD65052B78D39C002B9842 /* UIView + Ext.swift */,
+				55DD65072B78D406002B9842 /* UIViewController + Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		55DD650A2B7A3413002B9842 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55DD64F42B77CA90002B9842 /* SideTabBar.swift */,
+				55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,13 +284,16 @@
 				55DD64C22B77C8B8002B9842 /* ProfileRouter.swift in Sources */,
 				55DD64CE2B77C8CD002B9842 /* WeaponViewController.swift in Sources */,
 				55DD64F72B77CA90002B9842 /* SideTabBar.swift in Sources */,
-				55DD64F52B77CA90002B9842 /* SideTabBarController.swift in Sources */,
 				55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */,
 				55DD64CF2B77C8CD002B9842 /* WeaponInteractor.swift in Sources */,
 				55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */,
+				55DD65032B78CC3F002B9842 /* SideBarViewController.swift in Sources */,
 				55DD64CD2B77C8CD002B9842 /* WeaponRouter.swift in Sources */,
 				55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */,
 				55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */,
+				55DD65002B78CC3F002B9842 /* SideBarModuleBuilder.swift in Sources */,
+				55DD65012B78CC3F002B9842 /* SideBarPresenter.swift in Sources */,
+				55DD65042B78CC3F002B9842 /* SideBarInteractor.swift in Sources */,
 				55DD64D82B77C8E9002B9842 /* GameRouter.swift in Sources */,
 				55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */,
 				55DD64D62B77C8E9002B9842 /* GameModuleBuilder.swift in Sources */,
@@ -273,9 +302,12 @@
 				55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */,
 				55DD64CB2B77C8CD002B9842 /* WeaponModuleBuilder.swift in Sources */,
 				55DD64C32B77C8B8002B9842 /* ProfileViewController.swift in Sources */,
+				55DD65062B78D39C002B9842 /* UIView + Ext.swift in Sources */,
 				55DD64C12B77C8B8002B9842 /* ProfilePresenter.swift in Sources */,
 				55DD64FA2B77CAAD002B9842 /* CALayer + Ext.swift in Sources */,
 				55DD64C42B77C8B8002B9842 /* ProfileInteractor.swift in Sources */,
+				55DD65082B78D406002B9842 /* UIViewController + Ext.swift in Sources */,
+				55DD65022B78CC3F002B9842 /* SideBarRouter.swift in Sources */,
 				55DD64C02B77C8B8002B9842 /* ProfileModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

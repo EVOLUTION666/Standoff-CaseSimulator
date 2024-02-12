@@ -2,6 +2,8 @@ import UIKit
 
 class ContainerViewController: UIViewController {
     
+    // MARK: - Private
+    
     private var viewControllers: [UIViewController] = []
     private(set) var selectedIndex: Int! {
         didSet {
@@ -18,6 +20,8 @@ class ContainerViewController: UIViewController {
         stack.axis = .vertical
         return stack
     }()
+    
+    // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +48,6 @@ class ContainerViewController: UIViewController {
         }
     }
     
-    private func updateViewController() {
-        self.add(self.viewControllers[selectedIndex])
-    }
-    
     func add(_ child: UIViewController) {
         addChild(child)
         child.view.translatesAutoresizingMaskIntoConstraints = false
@@ -62,36 +62,11 @@ class ContainerViewController: UIViewController {
     }
 }
 
-
-//class Wep: ContainerViewController, WeaponNavigationBarViewDelegate {
-//
-//    private lazy var weapon = WeaponNavigationBarView().forAutoLayout()
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Все кастомные вьюхи добавляются в этот стэк
-//        self.contentStackView.addArrangedSubview(weapon)
-//        
-//        weapon.heightAnchor.constraint(equalToConstant: 40).activated()
-//        
-//        // Нужно задать все контроллеры. Для вкладки Инвентарь, Магазин, Рынок. Отдельный вью контроллер для каждого
-//
-//        let invent = InventoryViewController()
-//        invent.view.backgroundColor = .cyan
-//        
-//        let shop = ShopViewController()
-//        shop.view.backgroundColor = .green
-//        
-//        let market = MarketViewController()
-//        market.view.backgroundColor = .red
-//        self.setViewControllers([invent, shop, market])
-//        weapon.delegate = self
-//    }
-//    
-//    func didSelect(index: Int) {
-//        self.changeSelectedViewController(at: index)
-//    }
-//}
+private extension ContainerViewController {
+    private func updateViewController() {
+        self.add(self.viewControllers[selectedIndex])
+    }
+}
 
 extension NSLayoutConstraint {
     @discardableResult

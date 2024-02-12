@@ -1,6 +1,9 @@
 import UIKit
 
 class SideTabBarItem: UIControl {
+    
+    // MARK: - Public
+    
     struct DisplayItem {
         let title: String?
         let image: UIImage?
@@ -23,6 +26,8 @@ class SideTabBarItem: UIControl {
             }
         }
     }
+    
+    // MARK: - Private
     
     private var style = Style(font: .systemFont(ofSize: 15),
                               titleColor: .textPrimary,
@@ -52,26 +57,48 @@ class SideTabBarItem: UIControl {
         return stack
     }()
     
+    // MARK: - Life cycle
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addSubview(contentStackView)
-        self.isUserInteractionEnabled = true
-        NSLayoutConstraint.activate([
-            contentStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            contentStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)
-        ])
-        self.backgroundColor = style.backgroundColor
+        initialize()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+}
+
+// MARK: - Public extension
+
+extension SideTabBarItem {
     func setDisplayItem(_ item: DisplayItem) {
         self.imageView.image = item.image
         self.titleLabel.text = item.title
         self.titleLabel.isHidden = item.title == nil
         self.imageView.isHidden = item.image == nil
+    }
+}
+
+// MARK: - Private extension
+
+private extension SideTabBarItem {
+    func initialize() {
+        configureSubviews()
+        configureConstraints()
+        isUserInteractionEnabled = true
+        backgroundColor = style.backgroundColor
+    }
+    
+    func configureSubviews() {
+        addSubview(contentStackView)
+    }
+    
+    func configureConstraints() {
+        NSLayoutConstraint.activate([
+            contentStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            contentStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)
+        ])
     }
     
     func setStyle(_ style: Style) {
@@ -80,5 +107,4 @@ class SideTabBarItem: UIControl {
         self.titleLabel.textColor = isSelected ? style.selectedTitleColor : style.titleColor
         self.titleLabel.font = style.font
     }
-    
 }
