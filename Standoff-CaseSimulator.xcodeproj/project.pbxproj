@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D17D082B7B6C1B004F3B57 /* NameProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D072B7B6C1B004F3B57 /* NameProfileView.swift */; };
+		11D17D0B2B7B6EA0004F3B57 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D0A2B7B6EA0004F3B57 /* UILabel.swift */; };
+		11D17D0D2B7B77D2004F3B57 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D0C2B7B77D2004F3B57 /* ProgressView.swift */; };
+		11D17D122B7B8D83004F3B57 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D112B7B8D83004F3B57 /* AchievementsView.swift */; };
+		11D17D152B7B8ED7004F3B57 /* AchivmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D142B7B8ED7004F3B57 /* AchivmentCell.swift */; };
+		11D17D182B7B91D3004F3B57 /* AchivmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D172B7B91D3004F3B57 /* AchivmentModel.swift */; };
 		55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A72B77C8A5002B9842 /* AppDelegate.swift */; };
 		55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */; };
 		55DD64B12B77C8A8002B9842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64B02B77C8A8002B9842 /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11D17D072B7B6C1B004F3B57 /* NameProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameProfileView.swift; sourceTree = "<group>"; };
+		11D17D0A2B7B6EA0004F3B57 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		11D17D0C2B7B77D2004F3B57 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		11D17D112B7B8D83004F3B57 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		11D17D142B7B8ED7004F3B57 /* AchivmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentCell.swift; sourceTree = "<group>"; };
+		11D17D172B7B91D3004F3B57 /* AchivmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentModel.swift; sourceTree = "<group>"; };
 		55DD64A42B77C8A5002B9842 /* Standoff-CaseSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-CaseSimulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD64A72B77C8A5002B9842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +97,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11D17D052B7B6BF0004F3B57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D062B7B6BFB004F3B57 /* Subviews */,
+				55DD64BE2B77C8B8002B9842 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11D17D062B7B6BFB004F3B57 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D0E2B7B8D3A004F3B57 /* AchievementsView */,
+				11D17D0F2B7B8D43004F3B57 /* NameView */,
+				11D17D102B7B8D4D004F3B57 /* ProgressView */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		11D17D092B7B6E95004F3B57 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D0A2B7B6EA0004F3B57 /* UILabel.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		11D17D0E2B7B8D3A004F3B57 /* AchievementsView */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D132B7B8EC5004F3B57 /* Cell */,
+				11D17D112B7B8D83004F3B57 /* AchievementsView.swift */,
+			);
+			path = AchievementsView;
+			sourceTree = "<group>";
+		};
+		11D17D0F2B7B8D43004F3B57 /* NameView */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D072B7B6C1B004F3B57 /* NameProfileView.swift */,
+			);
+			path = NameView;
+			sourceTree = "<group>";
+		};
+		11D17D102B7B8D4D004F3B57 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D0C2B7B77D2004F3B57 /* ProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		11D17D132B7B8EC5004F3B57 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D142B7B8ED7004F3B57 /* AchivmentCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		11D17D162B7B919A004F3B57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D172B7B91D3004F3B57 /* AchivmentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		55DD649B2B77C8A5002B9842 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +184,7 @@
 		55DD64A62B77C8A5002B9842 /* Standoff-CaseSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				11D17D162B7B919A004F3B57 /* Models */,
 				55DD64F12B77CA90002B9842 /* ContainerViewController.swift */,
 				55DD64DE2B77C9E2002B9842 /* SideBar */,
 				55DD64C52B77C8BD002B9842 /* Profile */,
@@ -119,10 +200,10 @@
 		55DD64C52B77C8BD002B9842 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				11D17D052B7B6BF0004F3B57 /* View */,
 				55DD64BB2B77C8B8002B9842 /* ProfileModuleBuilder.swift */,
 				55DD64BC2B77C8B8002B9842 /* ProfilePresenter.swift */,
 				55DD64BD2B77C8B8002B9842 /* ProfileRouter.swift */,
-				55DD64BE2B77C8B8002B9842 /* ProfileViewController.swift */,
 				55DD64BF2B77C8B8002B9842 /* ProfileInteractor.swift */,
 			);
 			path = Profile;
@@ -187,6 +268,7 @@
 		55DD64E72B77CA3E002B9842 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				11D17D092B7B6E95004F3B57 /* BaseView */,
 				55DD64E82B77CA44002B9842 /* Extension */,
 			);
 			path = Core;
@@ -287,10 +369,15 @@
 				55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */,
 				55DD64CF2B77C8CD002B9842 /* WeaponInteractor.swift in Sources */,
 				55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */,
+				11D17D152B7B8ED7004F3B57 /* AchivmentCell.swift in Sources */,
 				55DD65032B78CC3F002B9842 /* SideBarViewController.swift in Sources */,
+				11D17D0D2B7B77D2004F3B57 /* ProgressView.swift in Sources */,
+				11D17D122B7B8D83004F3B57 /* AchievementsView.swift in Sources */,
 				55DD64CD2B77C8CD002B9842 /* WeaponRouter.swift in Sources */,
 				55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */,
 				55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */,
+				11D17D182B7B91D3004F3B57 /* AchivmentModel.swift in Sources */,
+				11D17D0B2B7B6EA0004F3B57 /* UILabel.swift in Sources */,
 				55DD65002B78CC3F002B9842 /* SideBarModuleBuilder.swift in Sources */,
 				55DD65012B78CC3F002B9842 /* SideBarPresenter.swift in Sources */,
 				55DD65042B78CC3F002B9842 /* SideBarInteractor.swift in Sources */,
@@ -300,6 +387,7 @@
 				55DD64D72B77C8E9002B9842 /* GamePresenter.swift in Sources */,
 				55DD64CC2B77C8CD002B9842 /* WeaponPresenter.swift in Sources */,
 				55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */,
+				11D17D082B7B6C1B004F3B57 /* NameProfileView.swift in Sources */,
 				55DD64CB2B77C8CD002B9842 /* WeaponModuleBuilder.swift in Sources */,
 				55DD64C32B77C8B8002B9842 /* ProfileViewController.swift in Sources */,
 				55DD65062B78D39C002B9842 /* UIView + Ext.swift in Sources */,
@@ -459,6 +547,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,6 +575,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
