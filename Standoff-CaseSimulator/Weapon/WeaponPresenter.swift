@@ -6,6 +6,7 @@
 //
 
 protocol WeaponPresenterProtocol: AnyObject {
+    
 }
 
 class WeaponPresenter {
