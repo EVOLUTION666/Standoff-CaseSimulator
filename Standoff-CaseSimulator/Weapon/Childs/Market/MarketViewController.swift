@@ -24,6 +24,7 @@ class MarketViewController: UIViewController {
 // MARK: - Private functions
 private extension MarketViewController {
     func initialize() {
+        view.backgroundColor = .accentOrange
     }
 }
 

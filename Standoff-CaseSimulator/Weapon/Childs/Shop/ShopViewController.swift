@@ -24,6 +24,7 @@ class ShopViewController: UIViewController {
 // MARK: - Private functions
 private extension ShopViewController {
     func initialize() {
+        view.backgroundColor = .white
     }
 }
 

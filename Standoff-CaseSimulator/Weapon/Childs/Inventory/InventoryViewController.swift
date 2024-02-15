@@ -8,6 +8,7 @@
 import UIKit
 
 protocol InventoryViewProtocol: AnyObject {
+    
 }
 
 class InventoryViewController: UIViewController {
@@ -24,6 +25,7 @@ class InventoryViewController: UIViewController {
 // MARK: - Private functions
 private extension InventoryViewController {
     func initialize() {
+        view.backgroundColor = .blue
     }
 }
 
