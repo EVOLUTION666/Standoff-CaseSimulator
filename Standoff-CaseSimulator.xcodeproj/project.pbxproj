@@ -13,6 +13,11 @@
 		11D17D122B7B8D83004F3B57 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D112B7B8D83004F3B57 /* AchievementsView.swift */; };
 		11D17D152B7B8ED7004F3B57 /* AchivmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D142B7B8ED7004F3B57 /* AchivmentCell.swift */; };
 		11D17D182B7B91D3004F3B57 /* AchivmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D172B7B91D3004F3B57 /* AchivmentModel.swift */; };
+		11D17D1C2B7CE1A1004F3B57 /* WeaponNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D1B2B7CE1A1004F3B57 /* WeaponNavigationBarView.swift */; };
+		11D17D1E2B7CE4E8004F3B57 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D1D2B7CE4E8004F3B57 /* R.swift */; };
+		11D17D212B7CECC3004F3B57 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D202B7CECC3004F3B57 /* InventoryViewController.swift */; };
+		11D17D252B7CED12004F3B57 /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D242B7CED12004F3B57 /* InventoryCell.swift */; };
+		11D17D282B7E225A004F3B57 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D17D272B7E225A004F3B57 /* ContainerViewController.swift */; };
 		55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A72B77C8A5002B9842 /* AppDelegate.swift */; };
 		55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */; };
 		55DD64B12B77C8A8002B9842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64B02B77C8A8002B9842 /* Assets.xcassets */; };
@@ -32,7 +37,6 @@
 		55DD64D82B77C8E9002B9842 /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D32B77C8E9002B9842 /* GameRouter.swift */; };
 		55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D42B77C8E9002B9842 /* GameViewController.swift */; };
 		55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64D52B77C8E9002B9842 /* GameInteractor.swift */; };
-		55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F12B77CA90002B9842 /* ContainerViewController.swift */; };
 		55DD64F72B77CA90002B9842 /* SideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F42B77CA90002B9842 /* SideTabBar.swift */; };
 		55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */; };
 		55DD64FA2B77CAAD002B9842 /* CALayer + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */; };
@@ -52,6 +56,11 @@
 		11D17D112B7B8D83004F3B57 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		11D17D142B7B8ED7004F3B57 /* AchivmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentCell.swift; sourceTree = "<group>"; };
 		11D17D172B7B91D3004F3B57 /* AchivmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentModel.swift; sourceTree = "<group>"; };
+		11D17D1B2B7CE1A1004F3B57 /* WeaponNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponNavigationBarView.swift; sourceTree = "<group>"; };
+		11D17D1D2B7CE4E8004F3B57 /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		11D17D202B7CECC3004F3B57 /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		11D17D242B7CED12004F3B57 /* InventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
+		11D17D272B7E225A004F3B57 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		55DD64A42B77C8A5002B9842 /* Standoff-CaseSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-CaseSimulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD64A72B77C8A5002B9842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +82,6 @@
 		55DD64D32B77C8E9002B9842 /* GameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRouter.swift; sourceTree = "<group>"; };
 		55DD64D42B77C8E9002B9842 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		55DD64D52B77C8E9002B9842 /* GameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInteractor.swift; sourceTree = "<group>"; };
-		55DD64F12B77CA90002B9842 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		55DD64F32B77CA90002B9842 /* SideTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarItem.swift; sourceTree = "<group>"; };
 		55DD64F42B77CA90002B9842 /* SideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBar.swift; sourceTree = "<group>"; };
 		55DD64F92B77CAAD002B9842 /* CALayer + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Ext.swift"; sourceTree = "<group>"; };
@@ -165,6 +173,57 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		11D17D192B7CE182004F3B57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D1F2B7CEC7D004F3B57 /* Controllers */,
+				11D17D1A2B7CE18A004F3B57 /* Subviews */,
+				55DD64C92B77C8CD002B9842 /* WeaponViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11D17D1A2B7CE18A004F3B57 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D1B2B7CE1A1004F3B57 /* WeaponNavigationBarView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		11D17D1F2B7CEC7D004F3B57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D222B7CECE9004F3B57 /* InventoryController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11D17D222B7CECE9004F3B57 /* InventoryController */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D232B7CED02004F3B57 /* Cell */,
+				11D17D202B7CECC3004F3B57 /* InventoryViewController.swift */,
+			);
+			path = InventoryController;
+			sourceTree = "<group>";
+		};
+		11D17D232B7CED02004F3B57 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D242B7CED12004F3B57 /* InventoryCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		11D17D262B7E224C004F3B57 /* ContainerController */ = {
+			isa = PBXGroup;
+			children = (
+				11D17D272B7E225A004F3B57 /* ContainerViewController.swift */,
+			);
+			path = ContainerController;
+			sourceTree = "<group>";
+		};
 		55DD649B2B77C8A5002B9842 = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				11D17D162B7B919A004F3B57 /* Models */,
-				55DD64F12B77CA90002B9842 /* ContainerViewController.swift */,
 				55DD64DE2B77C9E2002B9842 /* SideBar */,
 				55DD64C52B77C8BD002B9842 /* Profile */,
 				55DD64D02B77C8D2002B9842 /* Weapon */,
@@ -212,10 +270,10 @@
 		55DD64D02B77C8D2002B9842 /* Weapon */ = {
 			isa = PBXGroup;
 			children = (
+				11D17D192B7CE182004F3B57 /* View */,
 				55DD64C62B77C8CD002B9842 /* WeaponModuleBuilder.swift */,
 				55DD64C72B77C8CD002B9842 /* WeaponPresenter.swift */,
 				55DD64C82B77C8CD002B9842 /* WeaponRouter.swift */,
-				55DD64C92B77C8CD002B9842 /* WeaponViewController.swift */,
 				55DD64CA2B77C8CD002B9842 /* WeaponInteractor.swift */,
 			);
 			path = Weapon;
@@ -248,6 +306,7 @@
 			children = (
 				55DD64B02B77C8A8002B9842 /* Assets.xcassets */,
 				55DD64B22B77C8A8002B9842 /* LaunchScreen.storyboard */,
+				11D17D1D2B7CE4E8004F3B57 /* R.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -268,6 +327,7 @@
 		55DD64E72B77CA3E002B9842 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				11D17D262B7E224C004F3B57 /* ContainerController */,
 				11D17D092B7B6E95004F3B57 /* BaseView */,
 				55DD64E82B77CA44002B9842 /* Extension */,
 			);
@@ -368,18 +428,21 @@
 				55DD64F72B77CA90002B9842 /* SideTabBar.swift in Sources */,
 				55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */,
 				55DD64CF2B77C8CD002B9842 /* WeaponInteractor.swift in Sources */,
-				55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */,
 				11D17D152B7B8ED7004F3B57 /* AchivmentCell.swift in Sources */,
+				11D17D1C2B7CE1A1004F3B57 /* WeaponNavigationBarView.swift in Sources */,
 				55DD65032B78CC3F002B9842 /* SideBarViewController.swift in Sources */,
 				11D17D0D2B7B77D2004F3B57 /* ProgressView.swift in Sources */,
 				11D17D122B7B8D83004F3B57 /* AchievementsView.swift in Sources */,
 				55DD64CD2B77C8CD002B9842 /* WeaponRouter.swift in Sources */,
+				11D17D1E2B7CE4E8004F3B57 /* R.swift in Sources */,
 				55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */,
 				55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */,
 				11D17D182B7B91D3004F3B57 /* AchivmentModel.swift in Sources */,
 				11D17D0B2B7B6EA0004F3B57 /* UILabel.swift in Sources */,
 				55DD65002B78CC3F002B9842 /* SideBarModuleBuilder.swift in Sources */,
+				11D17D212B7CECC3004F3B57 /* InventoryViewController.swift in Sources */,
 				55DD65012B78CC3F002B9842 /* SideBarPresenter.swift in Sources */,
+				11D17D252B7CED12004F3B57 /* InventoryCell.swift in Sources */,
 				55DD65042B78CC3F002B9842 /* SideBarInteractor.swift in Sources */,
 				55DD64D82B77C8E9002B9842 /* GameRouter.swift in Sources */,
 				55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */,
@@ -387,6 +450,7 @@
 				55DD64D72B77C8E9002B9842 /* GamePresenter.swift in Sources */,
 				55DD64CC2B77C8CD002B9842 /* WeaponPresenter.swift in Sources */,
 				55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */,
+				11D17D282B7E225A004F3B57 /* ContainerViewController.swift in Sources */,
 				11D17D082B7B6C1B004F3B57 /* NameProfileView.swift in Sources */,
 				55DD64CB2B77C8CD002B9842 /* WeaponModuleBuilder.swift in Sources */,
 				55DD64C32B77C8B8002B9842 /* ProfileViewController.swift in Sources */,

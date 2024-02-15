@@ -1,9 +1,12 @@
-import UIKit
+//
+//  ContainerViewController.swift
+//  Standoff-CaseSimulator
+//
+//  Created by Александр Горелкин on 15.02.2024.
+//
 
+import UIKit
 class ContainerViewController: UIViewController {
-    
-    // MARK: - Private
-    
     private var viewControllers: [UIViewController] = []
     private(set) var selectedIndex: Int! {
         didSet {
@@ -20,34 +23,29 @@ class ContainerViewController: UIViewController {
         stack.axis = .vertical
         return stack
     }()
-    
-    // MARK: - Life cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(contentStackView)
-        
         NSLayoutConstraint.activate([
             contentStackView.topAnchor.constraint(equalTo: self.view.topAnchor),
             contentStackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             contentStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         ])
-        
     }
-    
     func setViewControllers(_ viewControllers: [UIViewController], selectedViewController: Int = 0) {
         self.viewControllers = viewControllers
         if selectedViewController < viewControllers.count {
             self.selectedIndex = selectedViewController
         }
     }
-    
     func changeSelectedViewController(at index: Int) {
         if index < viewControllers.count {
             self.selectedIndex = index
         }
     }
-    
+    private func updateViewController() {
+        self.add(self.viewControllers[selectedIndex])
+    }
     func add(_ child: UIViewController) {
         addChild(child)
         child.view.translatesAutoresizingMaskIntoConstraints = false
@@ -59,19 +57,5 @@ class ContainerViewController: UIViewController {
             child.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         child.didMove(toParent: self)
-    }
-}
-
-private extension ContainerViewController {
-    private func updateViewController() {
-        self.add(self.viewControllers[selectedIndex])
-    }
-}
-
-extension NSLayoutConstraint {
-    @discardableResult
-    func activated() -> NSLayoutConstraint {
-        self.isActive = true
-        return self
     }
 }
