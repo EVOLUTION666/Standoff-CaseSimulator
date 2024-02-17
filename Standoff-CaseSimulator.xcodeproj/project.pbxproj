@@ -24,6 +24,8 @@
 		557F1F5B2B7E601300ADFE4B /* MarketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F562B7E601300ADFE4B /* MarketRouter.swift */; };
 		557F1F5C2B7E601300ADFE4B /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F572B7E601300ADFE4B /* MarketViewController.swift */; };
 		557F1F5D2B7E601300ADFE4B /* MarketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F582B7E601300ADFE4B /* MarketInteractor.swift */; };
+		557F1F622B7F6DC100ADFE4B /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F612B7F6DC100ADFE4B /* InventoryView.swift */; };
+		557F1F652B80B17200ADFE4B /* InventoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F642B80B17200ADFE4B /* InventoryCollectionViewCell.swift */; };
 		55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A72B77C8A5002B9842 /* AppDelegate.swift */; };
 		55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */; };
 		55DD64B12B77C8A8002B9842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64B02B77C8A8002B9842 /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		557F1F562B7E601300ADFE4B /* MarketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRouter.swift; sourceTree = "<group>"; };
 		557F1F572B7E601300ADFE4B /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		557F1F582B7E601300ADFE4B /* MarketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInteractor.swift; sourceTree = "<group>"; };
+		557F1F612B7F6DC100ADFE4B /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		557F1F642B80B17200ADFE4B /* InventoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		55DD64A42B77C8A5002B9842 /* Standoff-CaseSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-CaseSimulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD64A72B77C8A5002B9842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		557F1F3C2B7E5F9600ADFE4B /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				557F1F602B7F6DA600ADFE4B /* Views */,
 				557F1F402B7E5FFD00ADFE4B /* InventoryModuleBuilder.swift */,
 				557F1F412B7E5FFD00ADFE4B /* InventoryPresenter.swift */,
 				557F1F422B7E5FFD00ADFE4B /* InventoryRouter.swift */,
@@ -164,14 +169,31 @@
 			path = Market;
 			sourceTree = "<group>";
 		};
-		557F1F3F2B7E5FE800ADFE4B /* Childs */ = {
+		557F1F3F2B7E5FE800ADFE4B /* Child Controller's */ = {
 			isa = PBXGroup;
 			children = (
 				557F1F3C2B7E5F9600ADFE4B /* Inventory */,
 				557F1F3D2B7E5FA900ADFE4B /* Shop */,
 				557F1F3E2B7E5FB600ADFE4B /* Market */,
 			);
-			path = Childs;
+			path = "Child Controller's";
+			sourceTree = "<group>";
+		};
+		557F1F602B7F6DA600ADFE4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				557F1F632B80B13D00ADFE4B /* Cells */,
+				557F1F612B7F6DC100ADFE4B /* InventoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		557F1F632B80B13D00ADFE4B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				557F1F642B80B17200ADFE4B /* InventoryCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		55DD649B2B77C8A5002B9842 = {
@@ -225,7 +247,7 @@
 				55DD64C82B77C8CD002B9842 /* WeaponRouter.swift */,
 				55DD64C92B77C8CD002B9842 /* WeaponViewController.swift */,
 				55DD64CA2B77C8CD002B9842 /* WeaponInteractor.swift */,
-				557F1F3F2B7E5FE800ADFE4B /* Childs */,
+				557F1F3F2B7E5FE800ADFE4B /* Child Controller's */,
 				557F1F392B7E5B1D00ADFE4B /* Views */,
 			);
 			path = Weapon;
@@ -380,6 +402,7 @@
 				55DD64F72B77CA90002B9842 /* SideTabBar.swift in Sources */,
 				557F1F3B2B7E5B6600ADFE4B /* GoldCurrencyView.swift in Sources */,
 				55DD64F82B77CA90002B9842 /* SideTabBarItem.swift in Sources */,
+				557F1F652B80B17200ADFE4B /* InventoryCollectionViewCell.swift in Sources */,
 				55DD64CF2B77C8CD002B9842 /* WeaponInteractor.swift in Sources */,
 				55DD64F62B77CA90002B9842 /* ContainerViewController.swift in Sources */,
 				55DD65032B78CC3F002B9842 /* SideBarViewController.swift in Sources */,
@@ -413,6 +436,7 @@
 				557F1F502B7E600900ADFE4B /* ShopPresenter.swift in Sources */,
 				55DD65022B78CC3F002B9842 /* SideBarRouter.swift in Sources */,
 				557F1F512B7E600900ADFE4B /* ShopRouter.swift in Sources */,
+				557F1F622B7F6DC100ADFE4B /* InventoryView.swift in Sources */,
 				557F1F5C2B7E601300ADFE4B /* MarketViewController.swift in Sources */,
 				55DD64C02B77C8B8002B9842 /* ProfileModuleBuilder.swift in Sources */,
 				557F1F382B7E5B1300ADFE4B /* WeaponNavigationBar.swift in Sources */,

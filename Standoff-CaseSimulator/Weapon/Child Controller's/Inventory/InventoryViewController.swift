@@ -12,8 +12,14 @@ protocol InventoryViewProtocol: AnyObject {
 }
 
 class InventoryViewController: UIViewController {
+    
     // MARK: - Public
+    
     var presenter: InventoryPresenterProtocol?
+    
+    // MARK: - Private
+    
+    private lazy var inventoryContainerView = InventoryView().forAutoLayout()
 
     // MARK: - View lifecycle
     override func viewDidLoad() {
@@ -26,9 +32,20 @@ class InventoryViewController: UIViewController {
 private extension InventoryViewController {
     func initialize() {
         view.backgroundColor = .blue
+        configureSubviews()
+        configureConstraints()
+    }
+    
+    func configureSubviews() {
+        view.addSubview(inventoryContainerView)
+    }
+    
+    func configureConstraints() {
+        inventoryContainerView.setSimpleConstraints(constant: 5)
     }
 }
 
 // MARK: - InventoryViewProtocol
 extension InventoryViewController: InventoryViewProtocol {
+    
 }
