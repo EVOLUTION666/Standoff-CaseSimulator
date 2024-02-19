@@ -1,13 +1,13 @@
 //
-//  InventoryView.swift
+//  TradingContainterView.swift
 //  Standoff-CaseSimulator
 //
-//  Created by Andrey on 16.02.2024.
+//  Created by Andrey on 19.02.2024.
 //
 
 import UIKit
 
-class InventoryView: UIView {
+class TradingContainterView: UIView {
     
     // MARK: - Private
     
@@ -16,7 +16,7 @@ class InventoryView: UIView {
                                               collectionViewLayout: compositionalLayout()).forAutoLayout()
         collectionView.backgroundColor = .white
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "InventoryCollectionViewCell.identifier")
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "TradingContainterView")
         collectionView.delegate = self
         collectionView.dataSource = self
         return collectionView
@@ -35,7 +35,7 @@ class InventoryView: UIView {
     
 }
 
-private extension InventoryView {
+private extension TradingContainterView {
     
     func initialize() {
         configureCollectionView()
@@ -48,7 +48,7 @@ private extension InventoryView {
     
     func compositionalLayout() -> UICollectionViewCompositionalLayout {
         
-        let fraction: CGFloat = 1 / 5
+        let fraction: CGFloat = 1 / 4
         let spacing = CGFloat(5)
         
         // Item
@@ -56,7 +56,7 @@ private extension InventoryView {
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
         // Group
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1 / 3.5))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1 / 2.5))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.interItemSpacing = .fixed(spacing)
         
@@ -71,15 +71,16 @@ private extension InventoryView {
 
 }
 
-extension InventoryView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension TradingContainterView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 30
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InventoryCollectionViewCell.identifier", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TradingContainterView", for: indexPath)
         cell.backgroundColor = .green
         return cell
     }
 }
+
 

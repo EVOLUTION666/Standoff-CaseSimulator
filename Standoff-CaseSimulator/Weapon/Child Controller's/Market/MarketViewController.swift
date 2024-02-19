@@ -8,11 +8,16 @@
 import UIKit
 
 protocol MarketViewProtocol: AnyObject {
+    
 }
 
-class MarketViewController: UIViewController {
+class MarketViewController: ContainerViewController {
+    
     // MARK: - Public
     var presenter: MarketPresenterProtocol?
+    
+    // MARK: - Private
+    private lazy var marketNavBar = MarketNavBarView().forAutoLayout()
 
     // MARK: - View lifecycle
     override func viewDidLoad() {
@@ -24,10 +29,33 @@ class MarketViewController: UIViewController {
 // MARK: - Private functions
 private extension MarketViewController {
     func initialize() {
-        view.backgroundColor = .accentOrange
+        view.backgroundColor = .white
+        marketNavBar.delegate = self
+        setupViewControllers()
+        configureNavBar()
+    }
+    
+    func setupViewControllers() {
+        let tradingPlatformVC = ChildTradingPlatformViewController()
+        let promotionVC = ChildPromotionMarketViewController()
+        self.setViewControllers([tradingPlatformVC, promotionVC])
+    }
+    
+    func configureNavBar() {
+        self.contentStackView.addArrangedSubview(marketNavBar)
+        marketNavBar.setConstraintsForNavBar()
     }
 }
 
 // MARK: - MarketViewProtocol
 extension MarketViewController: MarketViewProtocol {
+    
+}
+
+extension MarketViewController: MarketNavBarViewDelegate {
+    func didSelect(index: Int) {
+        self.changeSelectedViewController(at: index)
+    }
+    
+    
 }

@@ -26,6 +26,15 @@
 		557F1F5D2B7E601300ADFE4B /* MarketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F582B7E601300ADFE4B /* MarketInteractor.swift */; };
 		557F1F622B7F6DC100ADFE4B /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F612B7F6DC100ADFE4B /* InventoryView.swift */; };
 		557F1F652B80B17200ADFE4B /* InventoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1F642B80B17200ADFE4B /* InventoryCollectionViewCell.swift */; };
+		559C36982B821ECD0059B383 /* ShopNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36972B821ECD0059B383 /* ShopNavBarView.swift */; };
+		559C36A42B821FC30059B383 /* ChildShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C369F2B821FC30059B383 /* ChildShopViewController.swift */; };
+		559C36AE2B821FEE0059B383 /* ChildPromotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36A92B821FEE0059B383 /* ChildPromotionViewController.swift */; };
+		559C36B42B82257F0059B383 /* ShopContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36B32B82257F0059B383 /* ShopContainerView.swift */; };
+		559C36B72B824C0F0059B383 /* MarketNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36B62B824C0F0059B383 /* MarketNavBarView.swift */; };
+		559C36BC2B8378AD0059B383 /* ChildTradingPlatformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36BB2B8378AD0059B383 /* ChildTradingPlatformViewController.swift */; };
+		559C36BE2B837FEA0059B383 /* ChildPromotionMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36BD2B837FEA0059B383 /* ChildPromotionMarketViewController.swift */; };
+		559C36C32B8383BF0059B383 /* TradingContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36C22B8383BF0059B383 /* TradingContainterView.swift */; };
+		559C36C52B83868C0059B383 /* TradingSortFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36C42B83868C0059B383 /* TradingSortFilterView.swift */; };
 		55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A72B77C8A5002B9842 /* AppDelegate.swift */; };
 		55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */; };
 		55DD64B12B77C8A8002B9842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64B02B77C8A8002B9842 /* Assets.xcassets */; };
@@ -78,6 +87,15 @@
 		557F1F582B7E601300ADFE4B /* MarketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInteractor.swift; sourceTree = "<group>"; };
 		557F1F612B7F6DC100ADFE4B /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		557F1F642B80B17200ADFE4B /* InventoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		559C36972B821ECD0059B383 /* ShopNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopNavBarView.swift; sourceTree = "<group>"; };
+		559C369F2B821FC30059B383 /* ChildShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildShopViewController.swift; sourceTree = "<group>"; };
+		559C36A92B821FEE0059B383 /* ChildPromotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildPromotionViewController.swift; sourceTree = "<group>"; };
+		559C36B32B82257F0059B383 /* ShopContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopContainerView.swift; sourceTree = "<group>"; };
+		559C36B62B824C0F0059B383 /* MarketNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketNavBarView.swift; sourceTree = "<group>"; };
+		559C36BB2B8378AD0059B383 /* ChildTradingPlatformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildTradingPlatformViewController.swift; sourceTree = "<group>"; };
+		559C36BD2B837FEA0059B383 /* ChildPromotionMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildPromotionMarketViewController.swift; sourceTree = "<group>"; };
+		559C36C22B8383BF0059B383 /* TradingContainterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingContainterView.swift; sourceTree = "<group>"; };
+		559C36C42B83868C0059B383 /* TradingSortFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingSortFilterView.swift; sourceTree = "<group>"; };
 		55DD64A42B77C8A5002B9842 /* Standoff-CaseSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-CaseSimulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD64A72B77C8A5002B9842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +171,8 @@
 				557F1F4C2B7E600900ADFE4B /* ShopRouter.swift */,
 				557F1F4D2B7E600900ADFE4B /* ShopViewController.swift */,
 				557F1F4E2B7E600900ADFE4B /* ShopInteractor.swift */,
+				559C36992B821F670059B383 /* Child Controller's */,
+				559C36962B821E7E0059B383 /* Views */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -165,6 +185,8 @@
 				557F1F562B7E601300ADFE4B /* MarketRouter.swift */,
 				557F1F572B7E601300ADFE4B /* MarketViewController.swift */,
 				557F1F582B7E601300ADFE4B /* MarketInteractor.swift */,
+				559C36B82B8377A90059B383 /* Child Controller's */,
+				559C36B52B824B8C0059B383 /* Views */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -194,6 +216,91 @@
 				557F1F642B80B17200ADFE4B /* InventoryCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		559C36962B821E7E0059B383 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				559C36972B821ECD0059B383 /* ShopNavBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		559C36992B821F670059B383 /* Child Controller's */ = {
+			isa = PBXGroup;
+			children = (
+				559C369B2B821F9D0059B383 /* ChildPromotion */,
+				559C369A2B821F8A0059B383 /* ChildShop */,
+			);
+			path = "Child Controller's";
+			sourceTree = "<group>";
+		};
+		559C369A2B821F8A0059B383 /* ChildShop */ = {
+			isa = PBXGroup;
+			children = (
+				559C36B02B8224ED0059B383 /* Views */,
+				559C369F2B821FC30059B383 /* ChildShopViewController.swift */,
+			);
+			path = ChildShop;
+			sourceTree = "<group>";
+		};
+		559C369B2B821F9D0059B383 /* ChildPromotion */ = {
+			isa = PBXGroup;
+			children = (
+				559C36A92B821FEE0059B383 /* ChildPromotionViewController.swift */,
+			);
+			path = ChildPromotion;
+			sourceTree = "<group>";
+		};
+		559C36B02B8224ED0059B383 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				559C36B32B82257F0059B383 /* ShopContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		559C36B52B824B8C0059B383 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				559C36B62B824C0F0059B383 /* MarketNavBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		559C36B82B8377A90059B383 /* Child Controller's */ = {
+			isa = PBXGroup;
+			children = (
+				559C36BF2B8381480059B383 /* Trading Platform */,
+				559C36C02B83815B0059B383 /* Promotion */,
+			);
+			path = "Child Controller's";
+			sourceTree = "<group>";
+		};
+		559C36BF2B8381480059B383 /* Trading Platform */ = {
+			isa = PBXGroup;
+			children = (
+				559C36BB2B8378AD0059B383 /* ChildTradingPlatformViewController.swift */,
+				559C36C12B8381870059B383 /* View */,
+			);
+			path = "Trading Platform";
+			sourceTree = "<group>";
+		};
+		559C36C02B83815B0059B383 /* Promotion */ = {
+			isa = PBXGroup;
+			children = (
+				559C36BD2B837FEA0059B383 /* ChildPromotionMarketViewController.swift */,
+			);
+			path = Promotion;
+			sourceTree = "<group>";
+		};
+		559C36C12B8381870059B383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				559C36C22B8383BF0059B383 /* TradingContainterView.swift */,
+				559C36C42B83868C0059B383 /* TradingSortFilterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		55DD649B2B77C8A5002B9842 = {
@@ -408,20 +515,28 @@
 				55DD65032B78CC3F002B9842 /* SideBarViewController.swift in Sources */,
 				55DD64CD2B77C8CD002B9842 /* WeaponRouter.swift in Sources */,
 				557F1F5D2B7E601300ADFE4B /* MarketInteractor.swift in Sources */,
+				559C36982B821ECD0059B383 /* ShopNavBarView.swift in Sources */,
 				557F1F5A2B7E601300ADFE4B /* MarketPresenter.swift in Sources */,
+				559C36C52B83868C0059B383 /* TradingSortFilterView.swift in Sources */,
+				559C36A42B821FC30059B383 /* ChildShopViewController.swift in Sources */,
 				55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */,
+				559C36BE2B837FEA0059B383 /* ChildPromotionMarketViewController.swift in Sources */,
 				55DD64D92B77C8E9002B9842 /* GameViewController.swift in Sources */,
 				55DD65002B78CC3F002B9842 /* SideBarModuleBuilder.swift in Sources */,
 				55DD65012B78CC3F002B9842 /* SideBarPresenter.swift in Sources */,
+				559C36BC2B8378AD0059B383 /* ChildTradingPlatformViewController.swift in Sources */,
+				559C36AE2B821FEE0059B383 /* ChildPromotionViewController.swift in Sources */,
 				55DD65042B78CC3F002B9842 /* SideBarInteractor.swift in Sources */,
 				55DD64D82B77C8E9002B9842 /* GameRouter.swift in Sources */,
 				557F1F522B7E600900ADFE4B /* ShopViewController.swift in Sources */,
 				557F1F452B7E5FFD00ADFE4B /* InventoryModuleBuilder.swift in Sources */,
+				559C36C32B8383BF0059B383 /* TradingContainterView.swift in Sources */,
 				55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */,
 				55DD64D62B77C8E9002B9842 /* GameModuleBuilder.swift in Sources */,
 				55DD64D72B77C8E9002B9842 /* GamePresenter.swift in Sources */,
 				557F1F4F2B7E600900ADFE4B /* ShopModuleBuilder.swift in Sources */,
 				55DD64CC2B77C8CD002B9842 /* WeaponPresenter.swift in Sources */,
+				559C36B72B824C0F0059B383 /* MarketNavBarView.swift in Sources */,
 				55DD64DA2B77C8E9002B9842 /* GameInteractor.swift in Sources */,
 				55DD64CB2B77C8CD002B9842 /* WeaponModuleBuilder.swift in Sources */,
 				55DD64C32B77C8B8002B9842 /* ProfileViewController.swift in Sources */,
@@ -437,6 +552,7 @@
 				55DD65022B78CC3F002B9842 /* SideBarRouter.swift in Sources */,
 				557F1F512B7E600900ADFE4B /* ShopRouter.swift in Sources */,
 				557F1F622B7F6DC100ADFE4B /* InventoryView.swift in Sources */,
+				559C36B42B82257F0059B383 /* ShopContainerView.swift in Sources */,
 				557F1F5C2B7E601300ADFE4B /* MarketViewController.swift in Sources */,
 				55DD64C02B77C8B8002B9842 /* ProfileModuleBuilder.swift in Sources */,
 				557F1F382B7E5B1300ADFE4B /* WeaponNavigationBar.swift in Sources */,
@@ -591,6 +707,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,6 +735,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

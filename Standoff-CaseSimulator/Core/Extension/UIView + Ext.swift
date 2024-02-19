@@ -42,5 +42,16 @@ extension UIView {
             self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -constant)
         ])
     }
+    
+    func setConstraintsForNavBar() {
+        guard let superview = superview else {
+            return
+        }
+        NSLayoutConstraint.activate([
+            self.topAnchor.constraint(equalTo: superview.topAnchor),
+            self.leadingAnchor.constraint(equalTo: superview.leadingAnchor),
+            self.trailingAnchor.constraint(equalTo: superview.trailingAnchor),
+        ])
+    }
 }
 
