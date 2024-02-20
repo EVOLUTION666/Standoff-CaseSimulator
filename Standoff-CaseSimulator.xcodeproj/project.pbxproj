@@ -35,6 +35,7 @@
 		559C36BE2B837FEA0059B383 /* ChildPromotionMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36BD2B837FEA0059B383 /* ChildPromotionMarketViewController.swift */; };
 		559C36C32B8383BF0059B383 /* TradingContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36C22B8383BF0059B383 /* TradingContainterView.swift */; };
 		559C36C52B83868C0059B383 /* TradingSortFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36C42B83868C0059B383 /* TradingSortFilterView.swift */; };
+		559C36C82B84AD160059B383 /* TradingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C36C72B84AD160059B383 /* TradingCollectionViewCell.swift */; };
 		55DD64A82B77C8A5002B9842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A72B77C8A5002B9842 /* AppDelegate.swift */; };
 		55DD64AA2B77C8A5002B9842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */; };
 		55DD64B12B77C8A8002B9842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD64B02B77C8A8002B9842 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		559C36BD2B837FEA0059B383 /* ChildPromotionMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildPromotionMarketViewController.swift; sourceTree = "<group>"; };
 		559C36C22B8383BF0059B383 /* TradingContainterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingContainterView.swift; sourceTree = "<group>"; };
 		559C36C42B83868C0059B383 /* TradingSortFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingSortFilterView.swift; sourceTree = "<group>"; };
+		559C36C72B84AD160059B383 /* TradingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCollectionViewCell.swift; sourceTree = "<group>"; };
 		55DD64A42B77C8A5002B9842 /* Standoff-CaseSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-CaseSimulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD64A72B77C8A5002B9842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DD64A92B77C8A5002B9842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,12 +155,12 @@
 		557F1F3C2B7E5F9600ADFE4B /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
-				557F1F602B7F6DA600ADFE4B /* Views */,
 				557F1F402B7E5FFD00ADFE4B /* InventoryModuleBuilder.swift */,
 				557F1F412B7E5FFD00ADFE4B /* InventoryPresenter.swift */,
 				557F1F422B7E5FFD00ADFE4B /* InventoryRouter.swift */,
 				557F1F432B7E5FFD00ADFE4B /* InventoryViewController.swift */,
 				557F1F442B7E5FFD00ADFE4B /* InventoryInteractor.swift */,
+				557F1F602B7F6DA600ADFE4B /* Views */,
 			);
 			path = Inventory;
 			sourceTree = "<group>";
@@ -297,10 +299,19 @@
 		559C36C12B8381870059B383 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				559C36C62B84ACB70059B383 /* Cell */,
 				559C36C22B8383BF0059B383 /* TradingContainterView.swift */,
 				559C36C42B83868C0059B383 /* TradingSortFilterView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		559C36C62B84ACB70059B383 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				559C36C72B84AD160059B383 /* TradingCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		55DD649B2B77C8A5002B9842 = {
@@ -550,6 +561,7 @@
 				55DD65082B78D406002B9842 /* UIViewController + Ext.swift in Sources */,
 				557F1F502B7E600900ADFE4B /* ShopPresenter.swift in Sources */,
 				55DD65022B78CC3F002B9842 /* SideBarRouter.swift in Sources */,
+				559C36C82B84AD160059B383 /* TradingCollectionViewCell.swift in Sources */,
 				557F1F512B7E600900ADFE4B /* ShopRouter.swift in Sources */,
 				557F1F622B7F6DC100ADFE4B /* InventoryView.swift in Sources */,
 				559C36B42B82257F0059B383 /* ShopContainerView.swift in Sources */,

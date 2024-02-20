@@ -9,72 +9,91 @@ import UIKit
 
 class InventoryCollectionViewCell: UICollectionViewCell {
     
-    // MARK: - Public
+    // MARK: - Properties
     
-    static let identifier = "InventoryCollectionViewCell"
+    static let identidier = String(describing: InventoryCollectionViewCell.self)
     
     // MARK: - Private
     
-    private lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [backgroundWeaponImageView, rareIndicatorView]).forAutoLayout()
-        stackView.axis = .vertical
-        stackView.distribution = .fill
-        stackView.alignment = .fill
-        return stackView
+    private lazy var squareBackViewWeapon: UIView = {
+        let squareBackView = UIView().forAutoLayout()
+        squareBackView.backgroundColor = .clear
+        
+        return squareBackView
     }()
     
-    private lazy var backgroundWeaponImageView: UIView = {
-        let backgroundWeaponImageView = UIView().forAutoLayout()
-        backgroundWeaponImageView.backgroundColor = .white
-        return backgroundWeaponImageView
+    private lazy var weaponColorLineView: UIView = {
+        let weaponColorLineView = UIView().forAutoLayout()
+        weaponColorLineView.backgroundColor = .blueGradientStart
+        return weaponColorLineView
     }()
     
-    private lazy var weaponImageView: UIImageView = {
-        let imageView = UIImageView().forAutoLayout()
-        imageView.image = UIImage(named: "akr")
-        return imageView
+    private lazy var weaponNameLabel: UILabel = {
+        let weaponNameLabel = UILabel().forAutoLayout()
+        weaponNameLabel.textColor = .textPrimary
+        weaponNameLabel.text = "ARK Scale"
+        weaponNameLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        weaponNameLabel.textAlignment = .left
+        return weaponNameLabel
     }()
     
-    private lazy var rareIndicatorView: UIView = {
-        let rareIndicatorView = UIView().forAutoLayout()
-        rareIndicatorView.backgroundColor = .red
-        return rareIndicatorView
-    }()
-    
-    private lazy var nameWeaponLabel: UILabel = {
-        let nameWeaponLabel = UILabel().forAutoLayout()
-        nameWeaponLabel.text = "AKR Scale"
-        nameWeaponLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        nameWeaponLabel.textColor = .black
-        return nameWeaponLabel
+    private lazy var weaponIcon: UIImageView = {
+        let weaponIcon = UIImageView().forAutoLayout()
+        weaponIcon.image = UIImage(named: "akr")
+        weaponIcon.contentMode = .scaleAspectFill
+        weaponIcon.clipsToBounds = true
+        return weaponIcon
     }()
     
     // MARK: - View Lifecycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initialize()
+        configureViewCell()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        configureViewCell()
     }
-    
 }
 
+// MARK: - Extension
+
 private extension InventoryCollectionViewCell {
-    func initialize() {
+    
+    func configureViewCell() {
         configureSubviews()
         configureConstraints()
     }
     
     func configureSubviews() {
-        addSubview(stackView)
-        backgroundWeaponImageView.addSubview(weaponImageView)
-        rareIndicatorView.addSubview(nameWeaponLabel)
+        contentView.addSubview(squareBackViewWeapon)
+        squareBackViewWeapon.backgroundColor = .gray2With30Alpha
+        squareBackViewWeapon.addSubview(weaponIcon)
+        squareBackViewWeapon.addSubview(weaponColorLineView)
+        weaponColorLineView.addSubview(weaponNameLabel)
     }
     
     func configureConstraints() {
-        stackView.setSimpleConstraints()
+        
+        squareBackViewWeapon.setSimpleConstraints()
+        
+        NSLayoutConstraint.activate([
+            weaponIcon.topAnchor.constraint(equalTo: squareBackViewWeapon.topAnchor),
+            weaponIcon.leadingAnchor.constraint(equalTo: squareBackViewWeapon.leadingAnchor),
+            weaponIcon.trailingAnchor.constraint(equalTo: squareBackViewWeapon.trailingAnchor),
+            
+            weaponColorLineView.topAnchor.constraint(equalTo: weaponIcon.bottomAnchor),
+            weaponColorLineView.leadingAnchor.constraint(equalTo: squareBackViewWeapon.leadingAnchor),
+            weaponColorLineView.trailingAnchor.constraint(equalTo: squareBackViewWeapon.trailingAnchor),
+            weaponColorLineView.bottomAnchor.constraint(equalTo: squareBackViewWeapon.bottomAnchor),
+            weaponColorLineView.heightAnchor.constraint(equalToConstant: 20),
+            
+            weaponNameLabel.topAnchor.constraint(equalTo: weaponColorLineView.topAnchor),
+            weaponNameLabel.leadingAnchor.constraint(equalTo: weaponColorLineView.leadingAnchor, constant: 5),
+            weaponNameLabel.trailingAnchor.constraint(equalTo: weaponColorLineView.trailingAnchor),
+            weaponNameLabel.bottomAnchor.constraint(equalTo: weaponColorLineView.bottomAnchor),
+        ])
     }
 }

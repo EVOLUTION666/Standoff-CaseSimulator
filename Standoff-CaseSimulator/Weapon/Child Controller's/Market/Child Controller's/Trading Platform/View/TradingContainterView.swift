@@ -16,7 +16,7 @@ class TradingContainterView: UIView {
                                               collectionViewLayout: compositionalLayout()).forAutoLayout()
         collectionView.backgroundColor = .white
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "TradingContainterView")
+        collectionView.register(TradingCollectionViewCell.self, forCellWithReuseIdentifier: TradingCollectionViewCell.identidier)
         collectionView.delegate = self
         collectionView.dataSource = self
         return collectionView
@@ -77,7 +77,7 @@ extension TradingContainterView: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TradingContainterView", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TradingCollectionViewCell.identidier, for: indexPath) as! TradingCollectionViewCell
         cell.backgroundColor = .green
         return cell
     }

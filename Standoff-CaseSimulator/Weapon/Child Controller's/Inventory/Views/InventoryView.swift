@@ -10,13 +10,12 @@ import UIKit
 class InventoryView: UIView {
     
     // MARK: - Private
-    
     private lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero,
                                               collectionViewLayout: compositionalLayout()).forAutoLayout()
         collectionView.backgroundColor = .white
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "InventoryCollectionViewCell.identifier")
+        collectionView.register(InventoryCollectionViewCell.self, forCellWithReuseIdentifier: InventoryCollectionViewCell.identidier)
         collectionView.delegate = self
         collectionView.dataSource = self
         return collectionView
@@ -32,7 +31,6 @@ class InventoryView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 private extension InventoryView {
@@ -68,7 +66,6 @@ private extension InventoryView {
         section.contentInsets = NSDirectionalEdgeInsets(top: spacing, leading: spacing, bottom: -10, trailing: spacing)
         return UICollectionViewCompositionalLayout(section: section)
     }
-
 }
 
 extension InventoryView: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -77,7 +74,7 @@ extension InventoryView: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InventoryCollectionViewCell.identifier", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: InventoryCollectionViewCell.identidier, for: indexPath) as! InventoryCollectionViewCell
         cell.backgroundColor = .green
         return cell
     }
