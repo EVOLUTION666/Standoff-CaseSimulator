@@ -59,29 +59,29 @@ private extension ShopContainerView {
         
         // Item
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(fraction),
-            heightDimension: .fractionalHeight(1))
+            widthDimension: .fractionalWidth(1),
+            heightDimension: .fractionalHeight(1 / 2))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
         // Group
         let groupSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1),
+            widthDimension: .fractionalWidth(fraction),
             heightDimension: .fractionalHeight(1))
-        let group = NSCollectionLayoutGroup.horizontal(
+        let group = NSCollectionLayoutGroup.vertical(
             layoutSize: groupSize,
-            subitems: [item])
-        group.interItemSpacing = .fixed(spacing)
+            subitems: [item, item])
+        group.interItemSpacing = .fixed(5)
+        
+       
+        
         
         // Section
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsetsReference = .none
+        section.contentInsets = .init(top: 5, leading: 5, bottom: 5, trailing: 5)
+        section.interGroupSpacing = 5
         
-        section.interGroupSpacing = 0
-        section.contentInsets = NSDirectionalEdgeInsets(
-            top: spacing,
-            leading: spacing,
-            bottom: spacing,
-            trailing: spacing)
+        
         return UICollectionViewCompositionalLayout(section: section,
                                                    configuration: configuration)
     }
@@ -90,7 +90,7 @@ private extension ShopContainerView {
 
 extension ShopContainerView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 50
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
